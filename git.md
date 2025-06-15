@@ -1,7 +1,5 @@
 # Git
 
-## Problem Examples
-
 I staged the wrong code: `git restore --staged whatever_files`
 
 I modified the wrong branch, but I still need the changes: stash the changes and then reset the branch to the latest commit: `git stash -m "comment"` and `git reset --hard`
@@ -12,20 +10,22 @@ I committed a wrong commit: `git revert commit_hash` and `git push origin branch
 
 I need to update a branch: 
 
-1. Merge : 
+1. Merge : `git checkout main`, `git fetch`, `git pull origin main`, `git checkout branch`, `git merge main`, `git push origin branch`
 2. Rebase: 
 3. Squash: 
 
-I need to pick and apply commits from another branch in the same project: 
+I need to pick and apply commits from another branch in the same repository: 
 
-I need to pick and apply commits from another branch from another project: 
+I need to pick and apply commits from another branch from another repository: 
 
 I need to setup a remote: 
 
 I need to setup another remote: 
 
+I need to list all branches in the current repository: `git branch -a`
+
 I need to delete a branch: 
 
-I need to create and assign a tag: 
+I need to stash some code to return to later: 
 
-I need to stash some code and then return to it: 
+I need to create and assign a tag: 

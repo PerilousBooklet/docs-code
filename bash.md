@@ -2,6 +2,12 @@
 
 TODO: toc
 
+https://devhints.io/bash
+https://www.redhat.com/en/blog/arguments-options-bash-scripts
+
+https://stackoverflow.com/questions/8880603/loop-through-an-array-of-strings-in-bash
+https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash
+
 ## Loops
 
 ### C++-like for loop

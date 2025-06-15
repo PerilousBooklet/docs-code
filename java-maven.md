@@ -9,7 +9,7 @@
 
 1. Add `maven-javadoc-plugin` and `uml-doclet` as dependencies into `pom.xml`
 
-`maven-javadoc-plugin`
+> maven-javadoc-plugin
 ```xml
 <!-- Maven JavaDoc Site + UMLDoclet -->
 <plugin>
@@ -38,7 +38,7 @@
 </plugin>
 ```
 
-`uml-doclet`
+> uml-doclet
 ```xml
 <dependency>
   <groupId>nl.talsmasoftware</groupId>
@@ -53,14 +53,6 @@
 mvn javadoc:javadoc
 firefox target/site/apidocs/index.html
 ```
-
-3. Add support for `umldoclet`: write the following to `pom.xml`, within the `<configuration>` element of `maven-javadoc-plugin`:
-
-(already done in step 1)
-
-4. Open the `target/site/apidocs/index.html` file with a web browser
-
-(already done in step 2)
 
 ## Add code snippets to the javadocs website
 
