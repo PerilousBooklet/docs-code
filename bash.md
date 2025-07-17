@@ -35,6 +35,22 @@ To create numbered directories:
 mkdir -v ch{1..12}
 ```
 
+Check that a folder already exists: 
+
+```sh
+if [ -d ./java ]; then
+  echo "Folder java exists!"
+fi
+```
+
+Check that a folder doesn't already exist: 
+
+```sh
+if [ ! -d ./java ]; then
+  echo "Folder java doesn't exist yet!"
+fi
+```
+
 ## Strings
 
 ### Insert a multi-line string into a text file

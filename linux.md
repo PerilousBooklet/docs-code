@@ -1,8 +1,7 @@
 # Linux
 
-## How to setup and isolated development environment
+...
 
-## systemndspawn
+## How to setup an isolated development environment
 
-## docker
-
+...

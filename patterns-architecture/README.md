@@ -1,4 +1,4 @@
-# Software Architecture
+# Architectural Patterns
 
 General structure of a software program.
 
@@ -20,4 +20,15 @@ General structure of a software program.
 - Domain-driven Design
 - Component-based
 - Stream-based
+
+## Examples of Software Systems
+
+desktop/mobile/web app + API server
+
+desktop/mobile/web app
+
+CLI tool
+
+API server
+
 

@@ -1,17 +1,18 @@
 # Maven
 
-## How to add support for Javadocs with UML diagrams
+## Add support for javadocs with UML diagrams
 
 <!-- Sources -->
 <!-- https://maven.apache.org/plugins/maven-javadoc-plugin/usage.html -->
 <!-- https://medium.com/@oresoftware/generate-javadocs-that-arent-completely-worthless-788e12c76516 -->
 <!-- https://github.com/talsma-ict/umldoclet/blob/develop/usage.md#configuring-your-maven-build -->
 
-1. Add `maven-javadoc-plugin` and `uml-doclet` as dependencies into `pom.xml`
+1. Add `maven-javadoc-plugin` and `uml-doclet` as dependencies to `pom.xml`: 
 
 > maven-javadoc-plugin
+
 ```xml
-<!-- Maven JavaDoc Site + UMLDoclet -->
+<!-- Maven Javadoc Site + UMLDoclet -->
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-javadoc-plugin</artifactId>
@@ -39,6 +40,7 @@
 ```
 
 > uml-doclet
+
 ```xml
 <dependency>
   <groupId>nl.talsmasoftware</groupId>
@@ -47,13 +49,39 @@
 </dependency>
 ```
 
-2. Add `mvn javadoc:javadoc` to `build.sh`
+2. Add `mvn javadoc:javadoc` to `build.sh`: 
 
 ```sh
 mvn javadoc:javadoc
 firefox target/site/apidocs/index.html
 ```
 
-## Add code snippets to the javadocs website
+## Add support for dependency mapping
+
+<!-- Sources -->
+<!-- https://github.com/ferstl/depgraph-maven-plugin -->
+
+1. Add `depgraph-maven-plugin` as dependency to `pom.xml`: 
+
+> `pom.xml`
+
+```xml
+<!-- Dependency Graph -->
+<plugin>
+  <groupId>com.github.ferstl</groupId>
+  <artifactId>depgraph-maven-plugin</artifactId>
+  <version>4.0.3</version>
+</plugin>
+```
+
+2. Add the following to `build.sh`: 
+
+> `build.sh`
+
+```sh
+mvn depgraph:graph -DcreateImage=true
+```
+
+## Add support for code snippets within javadoc comments
 
 TODO: code snippets

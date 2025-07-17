@@ -1,8 +1,20 @@
 # Lite XL
 
+## How to test regex patterns for REDOs
+
+1. Run `rescue` in the terminal
+2. Paste the regex pattern
+3. If it returns strings, add them in the string field of `regex101`'s unit test list
+4. Look over the steps
+5. Fix the pattern
+
 ## Files
 
+?
+
 ## Strings
+
+?
 
 ## Error Messages
 
@@ -29,9 +41,9 @@ Wrap the suspected function call with `print(pcall())`
 - look at the `lsp` plugin
 - look at the `snippets` plugin
 
-## LPM
+## lpm (Lite XL Package Manager)
 
-Example of a branch-specific test bottle command:
+Example of a branch-specific test bottle command: `lpm --repository https://github.com/lite-xl/lite-xl-plugin-manager.git:3.0 run 3.0-preview`
 
-`lpm --repository https://github.com/lite-xl/lite-xl-plugin-manager.git:3.0 run 3.0-preview`
+Install a plugin from a specific branch of a custom repo: `lpm install https://github.com/adamharrison/lite-xl-plugins.git:PR/fix-select-colorscheme select_colorscheme`
 

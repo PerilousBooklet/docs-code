@@ -11,7 +11,7 @@
 - `ctrl + r` redo
 - `viw` select string surrounded by spaces if the string has mouse cursor above it
 
-## Neovim-tree
+## neovim-tree
 
 - `space + t` toggle project treeview
 - `space + e` focus tree view
@@ -22,6 +22,10 @@
 - `c` copy
 - `p` paste
 - `y` copy filename to clipboard
+
+## Telescope
+
+- ?
 
 ## TMUX
 
@@ -55,7 +59,7 @@
 
 ## QEMU
 
-- `s` s
+- `ctrl+alt+g` Give/take I/O control to/from VM (toggle)
 
 ## Luakit
 
