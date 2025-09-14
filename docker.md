@@ -1,5 +1,11 @@
 # Docker
 
+## Update a container in production
+
+1. Stop container: `cd ../services/service_name`, `sudo docker-compose stop`
+2. Remove old container: `sudo docker rm container_name`
+3. Get new image and restart container: `sudo docker-compose up -d`
+
 ## Example: base
 
 Repo: https://codeberg.org/simonrepp/feber
